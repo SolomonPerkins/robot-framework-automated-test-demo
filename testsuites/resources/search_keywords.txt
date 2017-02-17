@@ -1,0 +1,13 @@
+*** Settings ***
+Library            Selenium2Library    15
+
+*** Keywords ***
+Search for Phrase
+    [Arguments]    ${PHRASE}
+    Input Text        _dKg    ${PHRASE}
+    Click Button      css=input.jfk-button-action
+    Wait Until Element Is Visible   lst-ib
+
+Found in Results   
+    [Arguments]    ${PHRASE}
+    Page Should Contain      ${PHRASE}

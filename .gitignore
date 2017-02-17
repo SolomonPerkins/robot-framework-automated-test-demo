@@ -1,0 +1,7 @@
+# Mac OS X
+.DS_Store
+
+# Robot FRamework
+report/*
+configuration/*.pyc
+configuration/*py.class

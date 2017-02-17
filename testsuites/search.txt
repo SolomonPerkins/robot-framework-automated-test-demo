@@ -1,0 +1,20 @@
+*** Settings ***
+Resource     ./resources/basic_keywords.txt
+Resource     ./resources/search_keywords.txt
+
+Suite Setup        Prepare
+Suite Teardown     Cleanup
+
+
+*** Test Cases ***
+Search for Robot Framework
+    Open Application
+    Search for Phrase   Robot Framwewok
+    Found in Results    robotframework.org
+    Close Application
+
+Search for codecentric
+    Open Application
+    Search for Phrase   codecentric
+    Found in Results    www.codecentric.de
+    Close Application
