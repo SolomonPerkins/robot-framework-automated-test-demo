@@ -13,9 +13,9 @@ Cleanup
 
 Open Application
     &{CAPS}=   Create Dictionary   phantomjs.page.settings.userAgent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.120 Safari/537.36
-    Run Keyword If       '${WEBDRIVER_COPY}' == 'none'   Open Browser    ${LOGIN_URL}   ${WEBDRIVER_TYPE}   MainBrowser   http://localhost:4444    ${CAPS}
+    Run Keyword If       '${WEBDRIVER_COPY}' == 'none'   Open Browser    ${LOGIN_URL}   ${WEBDRIVER_TYPE}   MainBrowser   http://localhost:${PHANTOMJS_PORT}    ${CAPS}
     Run Keyword Unless   '${WEBDRIVER_COPY}' == 'none'   Open Browser    ${LOGIN_URL}   ${WEBDRIVER_TYPE}   MainBrowser
-    Wait Until Element Is Visible   _dKg 
+    Wait Until Element Is Visible   _dKg
     Capture Page Screenshot
 
 Close Application
