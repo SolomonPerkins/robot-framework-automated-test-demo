@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170226 23:52:46.980" generator="Robot 3.0.1 (Python 2.7.10 on darwin)">
+<suite source="/Users/muser/Personal Projects/robotframework-webproject-template/testsuites/search.txt" id="s1" name="Search">
+<kw type="setup" name="Basic -&gt; Prepare" library="basic_keywords">
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is false.</doc>
+<arguments>
+<arg>'${WEBDRIVER_PATH}' == 'none'</arg>
+<arg>Copy File</arg>
+<arg>${WEBDRIVER_PATH}</arg>
+<arg>.</arg>
+</arguments>
+<msg timestamp="20170226 23:52:47.229" level="FAIL">Variable '${WEBDRIVER_PATH}' not found.</msg>
+<status status="FAIL" endtime="20170226 23:52:47.229" starttime="20170226 23:52:47.228"></status>
+</kw>
+<status status="FAIL" endtime="20170226 23:52:47.229" starttime="20170226 23:52:47.228"></status>
+</kw>
+<test id="s1-t1" name="Search for Robot Framework">
+<status status="FAIL" endtime="20170226 23:52:47.230" critical="yes" starttime="20170226 23:52:47.229">Parent suite setup failed:
+Variable '${WEBDRIVER_PATH}' not found.</status>
+</test>
+<test id="s1-t2" name="Search for codecentric">
+<status status="FAIL" endtime="20170226 23:52:47.233" critical="yes" starttime="20170226 23:52:47.232">Parent suite setup failed:
+Variable '${WEBDRIVER_PATH}' not found.</status>
+</test>
+<kw type="teardown" name="Basic -&gt; Cleanup" library="basic_keywords">
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is false.</doc>
+<arguments>
+<arg>'${WEBDRIVER_COPY}' == 'none'</arg>
+<arg>Remove File</arg>
+<arg>${WEBDRIVER_COPY}</arg>
+</arguments>
+<msg timestamp="20170226 23:52:47.235" level="FAIL">Variable '${WEBDRIVER_COPY}' not found.</msg>
+<status status="FAIL" endtime="20170226 23:52:47.235" starttime="20170226 23:52:47.234"></status>
+</kw>
+<status status="FAIL" endtime="20170226 23:52:47.235" starttime="20170226 23:52:47.233">Variable '${WEBDRIVER_COPY}' not found.</status>
+</kw>
+<status status="FAIL" endtime="20170226 23:52:47.235" starttime="20170226 23:52:46.982">Suite setup failed:
+Variable '${WEBDRIVER_PATH}' not found.
+
+Also suite teardown failed:
+Variable '${WEBDRIVER_COPY}' not found.</status>
+</suite>
+<statistics>
+<total>
+<stat fail="2" pass="0">Critical Tests</stat>
+<stat fail="2" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="2" id="s1" name="Search" pass="0">Search</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

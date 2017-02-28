@@ -16,5 +16,16 @@ Search for Robot Framework
 Search for codecentric
     Basic -> Open Application
     Search -> Search for Phrase   codecentric
-    Search -> Found in Results    www.codecentric.de
+    Search -> Found in Results    codecentric.de
+    Basic -> Close Application
+
+Search for Solomon's Personal Blog
+    Basic -> Open Application
+    Search -> Search for Phrase   Solomon Perkins Github.io
+    Search -> Found in Results    Solomon Perkins
+    Search -> Navigate to Page    https://solomonperkins.github.io
+    Page -> Go To Page            archive
+    Page -> Click On Blog Post    archive-posts
+    Page -> Sleep for time      5s
+    Page -> Scroll to Element       tag-wrapper
     Basic -> Close Application
