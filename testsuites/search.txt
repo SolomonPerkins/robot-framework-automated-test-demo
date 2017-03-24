@@ -24,7 +24,7 @@ Search for Solomon's Personal Blog
     Search -> Search for Phrase   Solomon Perkins Github.io
     Search -> Found in Results    Solomon Perkins
     Search -> Navigate to Page    https://solomonperkins.github.io
-    Page -> Go To Page            archive
+    Page -> Go To Page            blog
     Page -> Click On Blog Post    archive-posts
     Page -> Sleep for time      5s
     Page -> Scroll to Element       tag-wrapper
